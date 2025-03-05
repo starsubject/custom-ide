@@ -1,0 +1,100 @@
+body {
+        background-color: #5E5E5E
+    }
+    
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  font-family: "Verdana";
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 4.2vh 3vh;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+h1, p, h2, h3, h4, h5, h6 {
+    color: #FFF;
+    font-family: "Verdana";
+    text-align: center;
+}
+
+        .featured-box {
+            background-color: #444;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 16px;
+            display: inline-block;
+            width: 75vh;
+            text-align: center;
+            color: #FFF;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            animation-direction: alternate;
+        animation-name: hover;
+        animation-duration: 1s;
+        animation-iteration-count: 999999999;
+
+}
+
+@keyframes hover {
+        100% {
+            transform: translateY(2%)
+        }
+}
+
+@keyframes smooth {
+        100% {
+            background-color: #555;
+        }
+}
+
+.featured-box:hover {
+        animation-name: smooth;
+        animation-duration: 0.33s;
+        animation-fill-mode: forwards;
+}
+
+a:link:not(.logo-text) {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited:not {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover:not(.logo-text) {
+  color: #fabef6;
+  background-color: transparent;
+  text-decoration:none
+}
+
+a:active:not {
+  color: pink;
+  background-color: transparent;
+  text-decoration:none
+}
+
+.logo-text {
+      background-image: linear-gradient(90deg, purple, #333);
+}
